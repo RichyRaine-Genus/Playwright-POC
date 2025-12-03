@@ -4,6 +4,8 @@ on:
   pull_request:
   push:
     branches: [ main ]
+  # Allow manual runs from the Actions UI so you can run the validator without the `gh` CLI
+  workflow_dispatch: {}
 
 jobs:
   validate-docmap:
