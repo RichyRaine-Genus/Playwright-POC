@@ -1,0 +1,50 @@
+[
+  {
+    "id": "readme",
+    "path": "README.md",
+    "tags": ["overview","quickstart"],
+    "summary": "Top-level project overview and quick start commands."
+  },
+  {
+    "id": "data-extraction",
+    "path": "docs/guides/D365_DATA_EXTRACTION_FRAMEWORK.md",
+    "tags": ["guide","extraction"],
+    "summary": "Detailed explanation of 3-strategy data extraction and examples."
+  },
+  {
+    "id": "conversion-guide",
+    "path": "docs/guides/ADO_TO_PLAYWRIGHT_CONVERSION_GUIDE.md",
+    "tags": ["guide","conversion"],
+    "summary": "Patterns and examples for converting ADO test steps to Playwright tests."
+  },
+  {
+    "id": "quick-start-context",
+    "path": "docs/quickref/QUICK_START_NEXT_CONTEXT.md",
+    "tags": ["quickstart","context"],
+    "summary": "Quick reference for next-context patterns and debugging tips."
+  },
+  {
+    "id": "quick-reference",
+    "path": "docs/quickref/QUICK_REFERENCE.md",
+    "tags": ["quickref"],
+    "summary": "Concise commands and pointers for common tasks."
+  },
+  {
+    "id": "conversion-progress",
+    "path": "docs/guides/CONVERSION_PROGRESS.md",
+    "tags": ["status","progress"],
+    "summary": "Current status of ADO to Playwright conversion and test coverage."
+  },
+  {
+    "id": "framework-summary",
+    "path": "docs/guides/FRAMEWORK_COMPLETION_SUMMARY.md",
+    "tags": ["summary","status"],
+    "summary": "Project completion notes and summary metrics."
+  },
+  {
+    "id": "copilot-instructions",
+    "path": "docs/guides/COPILOT_INSTRUCTIONS_FINAL_REVIEW.md",
+    "tags": ["instructions","agent"],
+    "summary": "Special instructions and guidance for AI coding agents working with this repo."
+  }
+]

@@ -1,0 +1,560 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+"40941","Test Case","Test plan for Navigation in D365 HR",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","As a user i want to be able to navigate to key areas in the system. Create a test plan to include these navigations.Those areas are as below.Default dashboardESS/MSSPeople workspaceAddress changesWorker actions / Position actions (inc view history)WorkersPositionsCompensationPerformance reviewsEducationCompensation Management
+","
+",,,
+"41462","Test Case","Test plan for New position tasks in G1 HR",,,,"Enterprise Solutions ART\HR","Rukayat Balogun <Rukayat.Balogun@genusplc.com>","Design"
+,,,"1","In G1 HR, navigate to  Human resources module> all positions","
+",,,
+,,,"2","Click new","A dialogue box is displayed",,,
+,,,"3","In the dialogue box, select 'NEW POS NO WF' in the personnel action type field (dropdown list) and 'PERMANENTPOS' in the reason code field (drop down list) and click continue","Position action page is displayed",,,
+,,,"4","In the general section, fill in the below details for the corresponding fields:
+-Job field: ADMIN 1 (dropdown list)
+-Position type field: PERMANENT (dropdown list)
+-Full time equivalent field: 1.00 (state 1 is for full time, less than 1 is part time)-Reports to position field: Select/search for a name (drop down list)-Compensation region field: GBR (drop down list)
+-Available for assignment field: date is elected from calendar
+ ","
+Description is updated
+",,,
+,,,"5","In the position section, insert a date in the activation field","
+",,,
+,,,"6","In the payroll section, fill in the below details for the corresponding fields:
+-Pay cycle field: Monthly (drop down list)
+-Paid by field: 4415 (drop down list)
+-Annual Regular hours: 37.00","
+",,,
+,,,"7","In the financial dimension section, click on add and fill in the below details for the corresponding fields:
+-Company Finance: 4415
+-Legal entity field: 4415 (drop down list)
+-Business alignment: ABS (drop down list)
+-Company Finance: 4415 (drop down list)
+-Cost centre: 6480 ((drop down list)
+-Cost centre Finance: 4050 (drop down list)
+-Division Finance: 41 (drop down list)
+-Product: 106 (drop down list)
+-Region Finance: 445 (drop down list)
+Click on OK","
+
+
+
+
+
+The financial dimension section is updated",,,
+,,,"8","Click complete","New position is created and action status field is changed to completed",,,
+"41465","Test Case","Test plan for cloned positions in G1 HR",,,,"Enterprise Solutions ART\HR","Rukayat Balogun <Rukayat.Balogun@genusplc.com>","Design"
+,,,"1","In G1 HR, navigate to  Human resources module> all positions
+","
+",,,
+,,,"2","Click new
+","A dialogue box is displayed
+",,,
+,,,"3","In the dialogue box, select 'NEW POS NO WF' in the personnel action type field (dropdown list) and 'PERMANENTPOS' in the reason code field (drop down list) and click continue
+","Position action page is displayed
+",,,
+,,,"4","Click on 'copy values from position' and insert 'PS009491' in the 'positon to copy from field'","
+",,,
+,,,"5","Click on 'copy values'","Position action fields are updated",,,
+,,,"6","In the job section, update the available for assignment field (date is elected from calendar)
+","
+",,,
+,,,"7","In the position duration section, update the activation date (date is elected from calendar)
+","
+",,,
+,,,"8","Click complete
+","New position is created and action status field is changed to completed
+",,,
+"41466","Test Case","Test plan for new worker",,,,"Enterprise Solutions ART\HR","Rukayat Balogun <Rukayat.Balogun@genusplc.com>","Design"
+,,,"1","In G1 HR, navigate to  Human resources module> workers
+","
+",,,
+,,,"2","Click on 'new'","A dialogue box is displayed",,,
+,,,"3","Fill the fields in the dialogue box
+-First name, middle name & Surname
+-Personnel action type: NEW HIRE NO WF
+-Employment start date
+-Legal entity: 4415 (drop down list)
+-Worker type: Employee (drop down list)
+-Employment start and end date
+-In the position details section, add the position number (PS000044)
+-Click continue","
+
+
+
+
+
+
+
+ The worker action page is displayed",,,
+,,,"4","In the action section, in the reason code field, insert 'permanent' (drop down list) ","
+",,,
+,,,"5","In the compensation section, fill in the below fields:
+-Fixed compensation plan: Hire (dropdown list)
+-Level: P2 (dropdown list)
+-Plan: Annual (dropdown list)
+-Pay rate
+-Effective date","
+",,,
+,,,"6","Click on complete","Status is updated from draft to completed in the worker action section and new worker is created.",,,
+"41503","Test Case","Navigate to ESS from default dashboard",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Navigate from the Default Dashboard by clicking on the Employee Self Service tile","Employee Self Service should open",,,
+,,,"2","
+","
+",,,
+"41504","Test Case","Navigate to MSS (My team) from the Default Dashboard",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Navigate from the Default Dashboard by clicking on the Employee Self Service tile
+","Employee self service should open",,,
+,,,"2","Click on the ""My team"" header","The ""My team"" area should open within ESS",,,
+"41505","Test Case","Navigate to the People workspace",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click on the Workspace icon/menu on the left","Open the menu",,,
+,,,"2","Click ""Workspaces""","Expands the list",,,
+,,,"3","Select ""People","Opens the ""People"" Workspace",,,
+"41506","Test Case","Navigate to Address Changes form",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click on the Workspaces icon/menu on the left","Open the Menu",,,
+,,,"2","Click ""Workspaces""","Expand Workspaces",,,
+,,,"3","Select ""Personnel Management""","Open the personnel management workspace",,,
+,,,"4","Click on the ""Address Changes"" tile at the top","Opens the address changes form",,,
+"41512","Test Case","Navigate to worker actions and position actions (inc view history)",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click on the menu on the left","The menu should open",,,
+,,,"2","Click Modules","The menu should expand",,,
+,,,"3","Select Human Resources","The Menu should expand",,,
+,,,"4","Select ""Workers"" then ""Actions""","The menu should expand",,,
+,,,"5","Select ""All worker actions""","The Worker actions form should open",,,
+,,,"6","select a worker action (Exclude NO WF)","Workflow will open",,,
+,,,"7","Click ""Workflow"" & View history at the top","The history of the workflow will be opened.",,,
+,,,"8","Repeat with positions workflows","Same access should be available with positions",,,
+"41513","Test Case","Navigate to Workers",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click on the menu on the left","Menu should expand",,,
+,,,"2","Click Modules","Menu should expand",,,
+,,,"3","Select ""Human Resources""","Menu should expand",,,
+,,,"4","Select ""Workers""","Menu should expand",,,
+,,,"5","Select ""Workers","Workers form should open",,,
+"41515","Test Case","Navigate to Positions",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Select the Menu on the left","Menu should expand",,,
+,,,"2","Select Modules","Menu should expand",,,
+,,,"3","Select ""Human Resources""","Menu should expand",,,
+,,,"4","Select ""Positions""","Menu should expand",,,
+,,,"5","Select ""All positions""","Positions form should open",,,
+"41518","Test Case","Navigate to Compensation Management",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click the Menu on the left","Menu expands",,,
+,,,"2","Click on Workspaces","Menu expands",,,
+,,,"3","Select ""Compensation Management"" workspace","Compensation Management workspace opens",,,
+"41519","Test Case","Navigate to Own Employee performance review",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""Employee Self Service"" Tile from the default dashboard","Employee self service opens",,,
+,,,"2","Click ""View reviews""","Performance review form opens",,,
+"41520","Test Case","Navigate to Own performance goals",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click the ""Employee Self Service"" Tile from the Default Dashboard","Employee Self Service opens",,,
+,,,"2","Click ""View all goals""","Goals form opens",,,
+"41521","Test Case","Navigate to My Teams performance goals",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""Employee Self Service"" tile","Employee Self service tile opens",,,
+,,,"2","Select ""My team"" menu","My team opens (MSS)",,,
+,,,"3","Click the ""Team performance goals"" tile","Team performance goals form opens",,,
+"41522","Test Case","Navigate to My Teams performance reviews",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""Employee Self Service"" tile on the Default dashboard","Employee self service opens",,,
+,,,"2","Click the ""My Team"" menu","Opens the My team form (MSS)",,,
+,,,"3","Click ""Team performance reviews"" tile","Opens the Teams performance reviews form",,,
+"41524","Test Case","Navigate to Workers compensation",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click on the menu on the left","Menu should expand",,,
+,,,"2","Click ""Modules""","menu should expand",,,
+,,,"3","Click ""Human Resources""","menu should expand",,,
+,,,"4","Click ""Workers""","menu should expand",,,
+,,,"5","Select ""Workers""","Workers form should open",,,
+,,,"6","Select an employee","An employee selection is made",,,
+,,,"7","Click the ""Compensation"" tab at the top","Menu expands to show compensation options",,,
+,,,"8","Select ""Employee Fixed Compensation""","Employees Fixed compensation form is opened",,,
+"41719","Test Case","Test plan for Terminations in D365 HR",,,,"Enterprise Solutions ART\HR","Rukayat Balogun <Rukayat.Balogun@genusplc.com>","Design"
+,,,"1","In G1 HR, navigate to  Human resources module> workers
+","
+",,,
+,,,"2","Click on 'view options' and select ;restrict to current legal entity' and 'apply'","
+",,,
+,,,"3","Search for the employee in the filter box (must be in same legal entity) ","
+",,,
+,,,"4","Click on 'terminate'","A dialogue page is displayed",,,
+,,,"5","Fill the fields in the dialogue box
+-Termination reason: End of contract (dropdown list)
+-Termination date: select 12/09/2024 from calendar displayed
+-Last day worked: select 11/09/2024 from calendar displayed
+-Personnel action type: terminate worker no work flow (dropdown list)
+-Click on continue
+","
+
+
+
+
+worker action page is displayed",,,
+,,,"6","Click on complete
+","Status is updated from draft to completed
+",,,
+"41724","Test Case","Test plan for position transfer tasks in D365 HR",,,,"Enterprise Solutions ART\HR","Rukayat Balogun <Rukayat.Balogun@genusplc.com>","Design"
+,,,"1","In G1 HR, navigate to  Human resources module> workers
+","
+",,,
+,,,"2","Search for the employee in the filter box
+","
+",,,
+,,,"3","Click on 'change position'","A dialogue page is displayed",,,
+,,,"4","Fill the fields in the dialogue box
+-Personnel action type: Transfer worker no workflow (dropdown list)
+-New assignment start date/time: select 12/09/2024 from calendar displayed
+-Update Assignment end date if required
+-Assignment end time: Never
+Position: PS000373 (drop down list)
+-Switch primary new assignment toggle to 'yes'
+-Transfer reason: Promotion (drop down list)
+
+In the compensation section
+-Action: change of position (drop down list)
+-Level: P1 (drop down list)
+-Plan: annual (drop down list)
+-Pay rate: 10,000
+-Click on continue
+","
+
+Assignment end date is updated
+
+
+
+
+
+
+
+
+
+
+
+worker action page is displayed
+",,,
+,,,"5","Click on complete","Status is updated from draft to completed
+",,,
+"41908","Test Case","Validating an employee for ""Ready to pay""",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click the menu","Menu expands",,,
+,,,"2","Click Module ""Human resources""","Menu expands",,,
+,,,"3","Select ""Workers""","Workers Expands",,,
+,,,"4","Select the worker required","Worker is selected",,,
+,,,"5","At the top click the Payroll tab and click ""Validate""","Confirmation shown on screen if the worker has Validated.",,,
+"41909","Test Case","Viewing ready to pay results",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click the menu on the left
+","Menu expands
+",,,
+,,,"2","Click Module ""Human resources""
+","Menu expands
+",,,
+,,,"3","Select ""Workers""
+","Workers Expands
+",,,
+,,,"4","Select the worker required
+","Worker is selected
+",,,
+,,,"5","At the top click the Payroll tab and click ""Results""
+","Ready to pay validation results will be shown",,,
+"41914","Test Case","Adding a ready to pay overide onto a worker",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click on the Menu on the left","menu expands",,,
+,,,"2","Click Modules","Menu expands",,,
+,,,"3","Click ""Human Resources""","Menu expands",,,
+,,,"4","Select ""Workers""","Workers form opens",,,
+,,,"5","Select the worker you need","Worker is selected",,,
+,,,"6","Click the Payroll tab at the top","Payroll tab expands",,,
+,,,"7","Click ""Employees with ready to pay override""","Payroll override screen opens",,,
+,,,"8","Click ""New""","new override record created",,,
+,,,"9","Select ""Ready to pay"" or ""Not ready to pay""","correct value is added",,,
+,,,"10","Back arrow to worker page","Worker page is re opened",,,
+,,,"11","Click ""Validate""","Rules should be bypassed appropriately",,,
+"41915","Test Case","Viewing workers in ""Ready to pay"", ""Not ready to pay"" or Overridden bucket",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Expand the menu","Menu expands",,,
+,,,"2","Click on Workspaces","Menu expands",,,
+,,,"3","Select ""Compensation Management"" workspace","Compensation Management workspace opened",,,
+,,,"4","Select ""Employees ready to pay"" tile","Ready to pay list visible",,,
+,,,"5","Click back","Back to the ""Compensation management"" workspace",,,
+,,,"6","Select ""Employees not ready to pay"" tile
+","Not ready to pay list visible
+",,,
+,,,"7","Click back","Back to the ""Compensation management"" workspace
+",,,
+,,,"8","Select ""Employees with ready to pay override"" tile
+","overridden list visible
+",,,
+"41916","Test Case","Manually sending a file to iipay",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Expand the menu
+","Menu expands
+",,,
+,,,"2","Click on Workspaces
+","Menu expands
+",,,
+,,,"3","Select ""Compensation Management"" workspace
+","Compensation Management workspace opened
+",,,
+,,,"4","Change legal entity if required","Legal entity is changed",,,
+,,,"5","Click ""Send payroll (CSV) file to iipay","pop up shown ""Ready to pay event generated for legal entity 4415""",,,
+,,,"6","Check in Sharepoint that the file is generated","File is generated within 10 minutes",,,
+"41920","Test Case","Add Private home address",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""Edit personal details""","Personal details form opens",,,
+,,,"2","On the addresses tab, Click ""Add""","Pop up for address entry shown",,,
+,,,"3","Enter address name ""e.g. Home"", Country, Postcode, Street, City, State & County","Information entered",,,
+,,,"4","Select Primary flag if required","Marked as primary",,,
+,,,"5","Select ""Private""","Marked as Private",,,
+,,,"6","Click ""OK""","Record is created",,,
+"41946","Test Case","Edit home address",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""Edit personal details""","Personal details form opens",,,
+,,,"2","Click ""Edit"" on the addresses tab","Address pop up shown",,,
+,,,"3","Make edit & save","Edit saved",,,
+"41947","Test Case","Add / remove contact email or phone, set private",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""Edit personal details""
+","Personal information form opened",,,
+,,,"2","Click the ""Contact details"" tab","Contact details tab opened",,,
+,,,"3","Click ""Add""","Contact information tab opens",,,
+,,,"4","Enter details and set type to Phone or email","Details entered",,,
+,,,"5","Check ""Is private"" and click ok","Record is marked as private and saved",,,
+,,,"6","To remove record, select and click remove","Record is removed",,,
+"41949","Test Case","Adding personal contacts, setting as emergency contact and adding address / contact information",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""Edit personal information","Personal information tab opened",,,
+,,,"2","Select the personal contacts tab","Personal contact tab opened",,,
+,,,"3","Click ""New""","Popup for new contact",,,
+,,,"4","Enter names and click next","Names entered",,,
+,,,"5","Toggle ""Emergency contact"" yes or no","Field set to yes or no",,,
+,,,"6","Click ""Add"" under addresses to add address","Address added",,,
+,,,"7","Click ""Add under contact details to add email or phone","Email or phone added",,,
+,,,"8","Click Save","Personal contact record saved",,,
+"41952","Test Case","View Compensation",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""Show"" padlock on ESS","Compensation should show",,,
+,,,"2","Click on the Blue number value","Employee compensation history should show",,,
+"41953","Test Case","Add Performance goals",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""View all goals"" on ESS","Goals form shown",,,
+,,,"2","Click Add goal from template at the top","Goal pop up shown",,,
+,,,"3","Select ""ENG -Select"" from the top","Template selected",,,
+,,,"4","Specify the date the goal is valid for","Date range entered",,,
+,,,"5","Click Create","Goal created",,,
+"41954","Test Case","Edit goals",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""View all goals"" on ESS","Goals form opened",,,
+,,,"2","Select goal to edit, click edit","Goal opened",,,
+,,,"3","Update, title, overview or details","Details updated",,,
+,,,"4","Click Save","Record is saved",,,
+"41955","Test Case","Add comments onto performance review",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""View reviews"" on ESS","Reviews form opened",,,
+,,,"2","Select the review, select the goal required and click ""Add comment""","Review / goal selected",,,
+,,,"3","Add comments as required","Comment is added",,,
+,,,"4","Click ""Post"" to save","Comment saved to review",,,
+,,,"5","Repeat for ""Final comments""","Final comments saved",,,
+"41956","Test Case","Submit a review to manager",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""View reviews""","Reviews form opened",,,
+,,,"2","Select the relevant review","Review selected",,,
+,,,"3","Click ""Submit to manager""","Review status updates to ""Final Review""",,,
+"41959","Test Case","Access teams performance review",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""My team""","My team tab opens",,,
+,,,"2","Click ""Team performance reviews"" tile","Team performance reviews shown",,,
+"41960","Test Case","Access team performance goals",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""My team""","team information shown",,,
+,,,"2","Click ""Team performance goals"" tile","Teams goals shown",,,
+"41961","Test Case","Access to Exiting workers",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""My team""","My team tab opened",,,
+,,,"2","Click ""Exiting workers"" tile","Exiting workers form opened",,,
+"41962","Test Case","Access to Open positions (Direct & Extended)",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""My team""","my team tab opened",,,
+,,,"2","Click ""Open positions - Direct reports"" tile","open positions form opened",,,
+,,,"3","Click back","Back to my team area",,,
+,,,"4","Click ""Open positions - Extended reports"" tile
+","open positions form opened
+",,,
+"41963","Test Case","Access to My worker/Position actions",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""My team""","My team tab opened",,,
+,,,"2","Under related links, click ""My worker actions""","Worker actions shown",,,
+,,,"3","Click back","Back to My team area",,,
+,,,"4","Under related links, click ""My position actions""
+","Position actions shown",,,
+"41964","Test Case","Adding goals to a review",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""My team""","my team area opened",,,
+,,,"2","Click ""Team performance reviews"" tile","My teams reviews shown",,,
+,,,"3","Select the review that needs goals adding","Review selected",,,
+,,,"4","On the Review tab, under goals. Click ""Add goal to review""","Goals list shown",,,
+,,,"5","Select the relevant goals and click add","Goals added to review",,,
+"41965","Test Case","Add comments on a direct reports review",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""My team"" ","My team tab opened",,,
+,,,"2","Click ""Team performance reviews""","Teams performance reviews shown",,,
+,,,"3","Select the review, select goal and click ""Add Comment""","Comments box opened",,,
+,,,"4","Enter comment and click ""Post"" to save","Comment saved",,,
+,,,"5","Repeat for final comment","Final comment added",,,
+"41966","Test Case","Add Ratings, Date finished and signoff a review",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click ""My team""","My team tab opened",,,
+,,,"2","Click ""Team performance reviews""","Team reviews shown",,,
+,,,"3","Select the required review, note that the review must be in the status ""Final review"" to proceed.","Confirm if its in the correct status",,,
+,,,"4","On the Ratings tab, Add Ratings against all goals and final rating against the employee","Ratings added",,,
+,,,"5","On the ratings tab, Add date finished","Date finished added",,,
+,,,"6","Click ""Sign off review""","Popup asking to confirm the signoff",,,
+,,,"7","Signoff","Review will move to completed after a few minutes (after the workflow runs)",,,
+"42042","Test Case","Reactivate a position",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Navigate to ""Inactive positions""","Inactive positions list",,,
+,,,"2","Select a position that is inactive","position selected",,,
+,,,"3","Click ""Edit""","Pop up shown",,,
+,,,"4","Select the ""Personnel action type"" always select the non WF version for testing, and select the reason code, click ""Continue""","Position action created and details on screen",,,
+,,,"5","On the Position duration section, enter a new Activation & Retirement date","New dates present",,,
+,,,"6","Click ""Complete""","Position is now active and should be seen in active positions list.",,,
+"42043","Test Case","Retire a position (Back dated & Future dated)",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Navigate to ""Active positions""","Active positions form opened",,,
+,,,"2","Select a position and click ""Edit""","pop up shown",,,
+,,,"3","Select the Non WF personnel action type and choose ""ENDPOSITION"" as the Reason code, click ""continue""
+","Position action created",,,
+,,,"4","Enter a Retirement date in the ""Position Duration"" section and click ""Complete","Position is retired and now present in the inactive positions list if in the past.",,,
+"42044","Test Case","Amend details on a position",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Navigate to Active positions and click ""Edit""","Edit popup shown",,,
+,,,"2","Select the non WF personnel action type and choose a reason code, then click continue","Position action created",,,
+,,,"3","Make updated to Job description, type, comp region, FTE, Paid by, Hours and FD's as required","Updates made",,,
+,,,"4","Click ""Complete""","Updates are effective.",,,
+"42048","Test Case","Edit a workers name details",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","From the workers form, select a worker and open the record","worker record opened",,,
+,,,"2","in the ""name details"" section,  click ""Change worker name""","name popup",,,
+,,,"3","Enter the new information and click ""Save""","New name is reflected on the profile",,,
+"42049","Test Case","Update workers personal information",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","From the workers form, select a worker and open the record","worker record opened",,,
+,,,"2","Scroll to the bottom and make edits to ""Personal information"", Fields to update are (Marital Status, Ethnic Origin, Gender, Birth date and person with disabilities.","Clicking out of each field will save the change",,,
+,,,"3","
+","
+",,,
+"42051","Test Case","Update worker employment dates and employment terms",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","from the workers form, select a worker the change is needed on","record is selected",,,
+,,,"2","Click the ""Work"" tab and then ""Employment history""","Employment history is opened",,,
+,,,"3","Click the ""Edit dates"" button, Enter new dates and click ""Update employment""","New employment dates are shown",,,
+,,,"4","Click ""Employment"" then ""Terms of employment""","Employment terms are shown",,,
+,,,"5","Click ""Edit"", enter new dates and click ""Update employment term"", to add new click ""New"", select the term from the dropdown and enter dates, Click save","new dates and terms are shown",,,
+,,,"6","
+","
+",,,
+"42052","Test Case","Update / new compensation action",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","From the workers form, select a worker in current legal entity and click ""Compensation"" then ""Fixed Plan""","Employees fixed compensation form is opened",,,
+,,,"2","Click ""Change compensation"" -> ""Update current compensation"" to update the current comp","pop up",,,
+,,,"3","Enter new expiry date or new Pay rate, Click ""Ok""","New pay is shown",,,
+,,,"4","To create a new row, click ""Change compensation"" -> ""New compensation action""","pop up",,,
+,,,"5","Select the type of Action, e.g. ANNUALPAY, enter date information and increase, then click ""Ok""","New Pay rate record created",,,
+"42053","Test Case","Create / edit ""Identification"" record",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","From the workers form, select a worker, Click person tab then ""Identification numbers""","identification form opened",,,
+,,,"2","To edit, Click ""Edit"", update the information and click ""Save","New information shown",,,
+,,,"3","To add, click ""New"", select the ""Identification type"" enter the number and other supporting information, click ""Save""","New record is created",,,
+"42055","Test Case","Update worker custom fields",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","From the workers screen, select a worker and open the record","Worker record opened",,,
+,,,"2","Make updates to ""Work location type"", ""Work level"", ""Icims ID"", ""Payroll ID"", ""Working Pattern"" & ""Shares award participant"" and click ""Save","Data has been updated",,,
+"42056","Test Case","Adding a review to a worker",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","From the workers page, select the worker","worker is selected",,,
+,,,"2","Click the person tab and then click ""Reviews""","Reviews form opened",,,
+,,,"3","Click ""New from template""","pop up",,,
+,,,"4","Select the template, usually (ENG - My Annual Review), enter the FY and click OK","review is created",,,
+"42057","Test Case","Update a workers address",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Select the worker in the workers form and open the record","worker record opened",,,
+,,,"2","In the addresses section, click the address you want to edit and click ""Edit""","pop up",,,
+,,,"3","Make the changes and click ""OK""","Changes reflected",,,
+,,,"4",,,,,
+"42059","Test Case","Adding an associated worksite",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Select the worker record in the workers form and open","Worker record opened",,,
+,,,"2","In the address section, click ""More Option"" & ""Select Other""","Pop up",,,
+,,,"3","Ensure correct LE is shown and select an address, Click ""OK""","Address is not in the list of addresses",,,
+,,,"4","Select the new address and click ""More Options"" & ""Assign to Office Location""","Address now added to the address box in the worker summary section ",,,
+"42061","Test Case","Adding / editing worker contact information",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Select a worker from the workers section and open the record","worker record opened",,,
+,,,"2","in the ""Contact information"" section, select the record to edit and click ""Advanced""","Pop up",,,
+,,,"3","Make the edit and click ""OK""","update reflected",,,
+,,,"4","To add new, click ""Add""","
+",,,
+,,,"5","Enter the description, choose type (Phone / Email) enter the number / address, Mark primary if required and click ""Save""","New contact record is valid",,,
+"42062","Test Case","Editing Variable compensation erollment",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","In the workers form, select a worker","worker selected",,,
+,,,"2","In the compensation tab, select ""Variable compensation enrollment""","variable compensation form opened",,,
+,,,"3","Make edits to the fields as required and click ""Save""","Updates are shown",,,
+"42066","Test Case","Worker transfer via workflow",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Select a worker in the workers form","worker selected",,,
+,,,"2","On the work tab, select ""Change position""","pop up",,,
+,,,"3","Select the personnel action type ""TRANS NO WF""","info entered",,,
+,,,"4","Enter the dates of the new assignment, enter the new position number, mark as primary and enter transfer reason, E.g. PROMOTION","Info entered",,,
+,,,"5","Select the action on the comp row ""CHANGEPOS"", enter ""Level"", ""Plan"" & ""Pay rate"", Click ""Continue""","Worker Action created",,,
+,,,"6","Check information is correct and click ""Complete""","The position and comp will be updated as per the request",,,
+"44178","Test Case","Reset FY25 review from in progress to not started",,,,"Enterprise Solutions ART\HR","Rukayat Balogun <Rukayat.Balogun@genusplc.com>","Design"
+,,,"1","In G1 HR, navigate to  workers module> all positions","
+",,,
+,,,"2","Search for worker in the name box","Worker name is displayed",,,
+,,,"3","Click on name > person tab > review","List of annual reviews are displayed",,,
+,,,"4","Click on the review you want to delete (FY 25 that is in progress when it should not) and click delete","The FY review entry is deleted",,,
+,,,"5","To create a new review, click on 'new from template', fill in the details and click on ok","The new review entry is added",,,
+"44347","Test Case","ESS Navigating to banking information & initial warning",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","From the default dashboard click the Employee self service tile","Employee self service workspace opened",,,
+,,,"2","Click on the ""edit personal details"" button","Personal information form opened",,,
+,,,"3","Click on the ""My payment method"" tab","Payment methods shown",,,
+,,,"4","If there is no primary or remainder setup for an employee","Warning: 
+Please note that you need a primary and remainder
+disbursement account setup.
+
+",,,
+"44348","Test Case","ESS Adding Bank disbursement",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","On the ""My payment methods"" form click the +New under ""My bank disbursements","Pop up for new disbursement opens",,,
+,,,"2","Enter the mandatory information and click Save","Disbursement created and if its a new bank account will show in the ""My bank accounts"" section",,,
+"44349","Test Case","ESS editing bank disbursements",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","In the ""My payment method"" tab in Personal information, click a disbursement row and click Edit","Record opens for update",,,
+,,,"2","Update record and click Save","Record is updated",,,
+"49899","Test Case","Bank disbursement warnings",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","When in the Bank disbursements form in ESS, there is no primary or remainder account setup for the employee","Warning generated: 
+Please note that you need a primary and remainder
+disbursement account setup.
+",,,
+,,,"2","Add a remainder account only  by clicking +New, entering the mandatory information and unchecking the primary flag, Click Save.","New account created and disbursement record shown.",,,
+,,,"3"," There is no primary account setup for the employee","Warning generated: 
+Please note that you need a primary disbursement account
+setup.
+",,,
+,,,"4","Delete the remainder account by clicking delete and add a primary account by clicking +New, entering all the mandatory information and unchecking the remainder flag and click Save","New account created and disbursement record shown.",,,
+,,,"5"," There is no remainder account setup for the employee","Warning generated: 
+Please note that you need a remainder disbursement
+account setup.",,,
+,,,"6","Delete all accounts so testing is cleaner on other scenarios","Deleted for other tests and original warning is now shown, ""Please note that you need a primary and remainder",,,
+"49903","Test Case","Bank disbursement defaults / Logic",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","If there is no primary or remainder account setup for an employee, Click +New to add a new disbursement.","Primary & Remainder toggles are set to ""Yes"" by default and Amount field is greyed out",,,
+,,,"2","If there is no primary account but there is a remainder setup for an employee, Click +New to add a new disbursement.","Primary toggle set to ""yes"" and remainder set to ""No"" and the amount field is editable",,,
+,,,"3","If there is no remainder account but there is a primary setup for an employee, Click +New to add a new disbursement.","Remainder toggle set to ""yes"" and Primary set to ""No"" and the Amount field is greyed out",,,
+,,,"4","If there is already a primary account setup for an employee, Click +New and toggle the Primary to yes","Popup:  
+You can only have one primary disbursement account. Do
+you want to replace the existing bank account with the selected bank account?
+
+",,,
+,,,"5","Click ok","New account set to primary, old unchecked",,,
+,,,"6","Click Cancel","No change to existing primary",,,
+,,,"7","If there is already a remainder account setup for an employee, Click +New and toggle the Remainder to yes","Popup: You can only have one remainder disbursement account. Doyou want to replace the existing bank account with the selected bank account?",,,
+,,,"8","Click ok","New account set to remainder, old unchecked",,,
+,,,"9","Click Cancel","No change to existing remainder",,,
+,,,"10","Select an account that is set as a remainder, click edit","Amount field should be greyed out if set as remainder",,,
+,,,"11","Select an account not set as a remainder, click edit","Amount field should be editable",,,
+,,,"12","Update account from not a remainder to remainder","Amount field should change from editable to greyed oyt",,,
+,,,"13","
+","
+",,,
+"58833","Test Case","Reward team - Letter generation settings / updates",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Navigate to Compensation management","Compensation management WS opened",,,
+,,,"2","Click Rewards letter management","Rewards form opened",,,
+,,,"3","Three tabs should show","Reward letters, Setup and Manager downloads should show",,,
+,,,"4","Click Setup tab","Setup options shown",,,
+,,,"5","Toggle BP Access","Allowed to toggle on / off",,,
+,,,"6","Toggle HRD Access","Allowed to toggle on / off",,,
+,,,"7","Toggle manager access","Allowed to toggle on / off",,,
+,,,"8","Disable manager downloads","Allowed to toggle on / off",,,
+,,,"9","edit Sharepoint details","Sharepoint details updated",,,
+"58834","Test Case","Rewards team - Letter generation table updates",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click compensation management workspace","Compensation management WS opened",,,
+,,,"2","Click Reward letter management","Reward letters form opened",,,
+,,,"3","Make edits on Reward letter table and save","Data is saved",,,
+"58835","Test Case","Rewards team - Generate Letters",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","In the Reward letter management form, select a record","Record selected",,,
+,,,"2","Click download reward letter/s","pop up shown",,,
+,,,"3","Uncheck PDF & Click OK","Word file Letter should download into my downloads",,,
+,,,"4","Click download reward letter/s","pop up shown",,,
+,,,"5","Click OK","PDF file Letter should download into my downloads",,,
+"58837","Test Case","HRBP - Rewards letter access",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Ensure HRBP Reward role isnt assigned","HRBP Reward letter tile in ESS should not be visbile",,,
+,,,"2","Assign HRBP Reward role","HRBP Reward letter tile in ESS should be visbile",,,
+,,,"3","In the Reward letter management screen set the toggle for HRBP access to NO","Toggle set to NO",,,
+,,,"4","Logging in as the HRBP, click thh HRBP reward letter tile and no data should be visible","Not visible when the BP access toggle set to NO",,,
+,,,"5","Set the BP Access toggle to Yes","Toggle set to NO",,,
+,,,"6","Logging in as the HRBP, click the HRBP reward letter tile and data should be visible","Only data that has the logging in user set as HRBP should be visible",,,
+,,,"7","Select a record and click Download reward letter/s, click ok","Letters should be downloaded to my downloads",,,
+"58838","Test Case","Manager - Rewards letter access",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Ensure Manager Reward role isnt assigned","Manager Reward letter tile in ESS/my team should not be visbile",,,
+,,,"2","Assign Manager Reward role","Manager Reward letter tile in ESS/my team should be visbile",,,
+,,,"3","In the Reward letter management screen set the toggle for Manager access to NO","Toggle set to NO",,,
+,,,"4","Logging in as the Manager, click the Manager reward letter tile and no data should be visible","Not visible when the Manager access toggle set to NO",,,
+,,,"5","Set the Manager Access toggle to Yes","Toggle set to Yes",,,
+,,,"6","Logging in as the Manager, click the HRBP reward letter tile and data should be visible","Only data that has the logging in user set as HRBP should be visible",,,
+,,,"7","If toggle in setup area for Disable manager downloads is set to Yes","Manager access should not be able to download letters",,,
+,,,"8","If toggle in setup area for Disable manager downloads is set to No","Manager access should be able to download letters",,,
+,,,"9","Select records and click Download reward letter/s, click ok","Letters should download to my downloads",,,

@@ -1,0 +1,27 @@
+name: Validate documentation docmap
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  validate-docmap:
+    name: Validate docmap
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install (no-op if no deps)
+        run: |
+          if [ -f package.json ]; then npm ci --prefer-offline --no-audit --progress=false; fi
+
+      - name: Run docmap validator
+        run: node scripts/validate-docmap.js
+        # This script should exit non-zero on failures to fail the job

@@ -1,0 +1,61 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+"41908","Test Case","Validating an employee for ""Ready to pay""",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click the menu","Menu expands",,,
+,,,"2","Click Module ""Human resources""","Menu expands",,,
+,,,"3","Select ""Workers""","Workers Expands",,,
+,,,"4","Select the worker required","Worker is selected",,,
+,,,"5","At the top click the Payroll tab and click ""Validate""","Confirmation shown on screen if the worker has Validated.",,,
+"41909","Test Case","Viewing ready to pay results",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click the menu on the left
+","Menu expands
+",,,
+,,,"2","Click Module ""Human resources""
+","Menu expands
+",,,
+,,,"3","Select ""Workers""
+","Workers Expands
+",,,
+,,,"4","Select the worker required
+","Worker is selected
+",,,
+,,,"5","At the top click the Payroll tab and click ""Results""
+","Ready to pay validation results will be shown",,,
+"41914","Test Case","Adding a ready to pay overide onto a worker",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Click on the Menu on the left","menu expands",,,
+,,,"2","Click Modules","Menu expands",,,
+,,,"3","Click ""Human Resources""","Menu expands",,,
+,,,"4","Select ""Workers""","Workers form opens",,,
+,,,"5","Select the worker you need","Worker is selected",,,
+,,,"6","Click the Payroll tab at the top","Payroll tab expands",,,
+,,,"7","Click ""Employees with ready to pay override""","Payroll override screen opens",,,
+,,,"8","Click ""New""","new override record created",,,
+,,,"9","Select ""Ready to pay"" or ""Not ready to pay""","correct value is added",,,
+,,,"10","Back arrow to worker page","Worker page is re opened",,,
+,,,"11","Click ""Validate""","Rules should be bypassed appropriately",,,
+"41915","Test Case","Viewing workers in ""Ready to pay"", ""Not ready to pay"" or Overridden bucket",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Expand the menu","Menu expands",,,
+,,,"2","Click on Workspaces","Menu expands",,,
+,,,"3","Select ""Compensation Management"" workspace","Compensation Management workspace opened",,,
+,,,"4","Select ""Employees ready to pay"" tile","Ready to pay list visible",,,
+,,,"5","Click back","Back to the ""Compensation management"" workspace",,,
+,,,"6","Select ""Employees not ready to pay"" tile
+","Not ready to pay list visible
+",,,
+,,,"7","Click back","Back to the ""Compensation management"" workspace
+",,,
+,,,"8","Select ""Employees with ready to pay override"" tile
+","overridden list visible
+",,,
+"41916","Test Case","Manually sending a file to iipay",,,,"Enterprise Solutions ART\HR","Craig Jeffries <Craig.Jeffries@genusplc.com>","Design"
+,,,"1","Expand the menu
+","Menu expands
+",,,
+,,,"2","Click on Workspaces
+","Menu expands
+",,,
+,,,"3","Select ""Compensation Management"" workspace
+","Compensation Management workspace opened
+",,,
+,,,"4","Change legal entity if required","Legal entity is changed",,,
+,,,"5","Click ""Send payroll (CSV) file to iipay","pop up shown ""Ready to pay event generated for legal entity 4415""",,,
+,,,"6","Check in Sharepoint that the file is generated","File is generated within 10 minutes",,,
