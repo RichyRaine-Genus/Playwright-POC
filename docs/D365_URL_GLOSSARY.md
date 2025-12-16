@@ -16,10 +16,12 @@ This glossary maps common D365 F&O testing scenarios to direct URL links. Use th
 | Module | Page | URL |
 |--------|------|-----|
 | HR | Worker List | `/?cmp=4415&mi=HcmWorkerListPage` |
+| HR | Position List (All Positions) | `/?cmp=4415&mi=HcmPositionList` |
 | HR | Employee Self Service (ESS) | `/?cmp=4415&mi=HcmEmployeeSelfServiceWorkspace` |
 | HR | Manager Self Service (MSS) | `/?cmp=4415&mi=HcmManagerSelfServiceWorkspace` |
 | HR | People (People Hub / Workers Hub) | `/?cmp=4415&mi=HcmPeopleHub` |
-| Payroll | Compensation Management | `/?cmp=4415&mi=CompensationManagementWorkspace` |
+| HR | Personnel Management / Workforce | `/?cmp=4415&mi=HcmWorkforceWorkspace` |
+| Payroll | Compensation Management | `/?cmp=4415&mi=HcmCompensationWorkspace` |
 | Payroll | Ready to Pay Validation | `/?cmp=4415&mi=ReadyToPayWorkspace` |
 | HR | Leave Management | `/?cmp=4415&mi=LeaveManagementWorkspace` |
 | HR | Recruitment | `/?cmp=4415&mi=RecruitmentWorkspace` |

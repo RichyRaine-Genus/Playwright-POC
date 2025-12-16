@@ -7,3 +7,6 @@ node_modules/
 /playwright/.cache/
 /playwright/.auth/
 .env
+
+# Test user credentials - contains passwords and sensitive information
+TEST_USER_CATALOG.md
